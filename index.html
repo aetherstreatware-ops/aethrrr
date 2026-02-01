@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>AETHER</title>
+
+<style>
+html{scroll-behavior:smooth;}
+
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+}
+
+/* HERO HOME */
+header{
+  height:100vh;
+  background:url("bg-brand.jpg") no-repeat center/cover;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+/* OVERLAY */
+header::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+}
+
+header *{
+  position:relative;
+  z-index:1;
+}
+
+/* LOGO */
+.logo{
+  width:140px;
+  margin-bottom:20px;
+}
+
+/* TITLE */
+h1{
+  font-size:60px;
+  letter-spacing:6px;
+  margin-bottom:30px;
+}
+
+/* BUTTON VIEW PRODUCT */
+.btn-view{
+  padding:15px 40px;
+  border:2px solid white;
+  color:white;
+  text-decoration:none;
+  font-size:15px;
+  letter-spacing:3px;
+  position:relative;
+  overflow:hidden;
+  transition:0.4s ease;
+  margin-bottom:30px;
+}
+
+.btn-view::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background:white;
+  transition:0.4s ease;
+  z-index:-1;
+}
+
+.btn-view:hover::before{
+  left:0;
+}
+
+.btn-view:hover{
+  color:black;
+}
+
+/* SOCIAL */
+.social{
+  display:flex;
+  gap:20px;
+}
+
+.social a{
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+  letter-spacing:2px;
+  border:1px solid white;
+  padding:10px 18px;
+  transition:0.3s;
+}
+
+.social a:hover{
+  background:white;
+  color:black;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+  <!-- LOGO -->
+  <img src="logo.jpg" class="logo" alt="AETHER Logo">
+
+  <!-- BRAND -->
+  <h1>AETHER</h1>
+
+  <!-- BUTTON -->
+  <a href="product.html#product" class="btn-view">
+    VIEW PRODUCT
+  </a>
+
+  <!-- IG & WA -->
+  <div class="social">
+    <a href="https://www.instagram.com/aethrrr_?igsh=MXQxajk2eHFodnUxMQ==" target="_blank">
+      INSTAGRAM
+    </a>
+    <a href="https://wa.me/6285722408795" target="_blank">
+      WHATSAPP
+    </a>
+  </div>
+
+</header>
+
+</body>
+</html>
